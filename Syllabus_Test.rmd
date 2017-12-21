@@ -1,0 +1,50 @@
+---
+title: "Syllabus Test"
+author: "Dr K"
+date: "December 19, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Problem Statement
+
+Create a document that shows your computation of the score you would get in the course if  
+
+1. the total score you got on all ten qiuzzes was 783 points - the top student on quizzes was 987.   
+What is your normalized quiz score?  
+```{r}
+(Nquiz=783/987)
+```
+
+2. your score in the swirl/datacamp courses category was 912   top score was 1473: you got 8 badges.   
+What is your normalized course score?   
+```{r}
+(Ncourse=912/1473)
+```
+
+3. your workshop category score was 619  top score was 812  What is your normalized workshop score?   
+```{r}
+(Nworkshop=619/812)
+```
+
+4. your DA&DAR score was 412 top score 703  What is your normalized DA&DAR score ?  
+```{r}
+(NDAR=412/703)
+```
+
+5. your grade on final was 82 top score was 100  
+
+```{r}
+(Nfinal=82/100)
+```
+
+## Overall score
+
+```{r}
+(score=20*Nquiz + 20*Ncourse + 15*Nworkshop + 20*NDAR + 25*Nfinal)
+```
+
+## Final Grade C
